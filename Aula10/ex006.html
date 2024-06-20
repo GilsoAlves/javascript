@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        div#area{
+            font: 20pt Arial;
+            background-color: green;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+        .nome{
+            width: 200px;
+            height: 200px;
+            background-color: gray;
+            line-height: 200px;
+            text-align: center;
+            color: red;
+            font-weight: bold;
+            font-size: 1em;
+        }
+        .cidade{
+            width: 200px;
+            height: 200px;
+            background-color: aquamarine;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <p>
+        <div id="area">
+            interaja....
+        </div>
+    </p>
+
+    <p>
+        <div class="nome">
+            Gilson da Silva Alves
+        </div>
+    </p>
+
+    <p>
+        <div class="cidade">
+            Coluna MG..
+        </div>
+    </p>
+
+    <script>
+        var b = window.document.getElementById('nome')//falta fazer
+        var a = window.document.getElementById('area')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+
+    
+
+
+        function clicar(){ 
+            a.innerText = 'Clicou!'
+            a.style.background = 'red'
+        }
+        function entrar(){
+            a.innerText = 'Entrou'
+            a.style.background = 'blue'
+            
+        }
+        function sair(){
+            a.innerText = 'Saiu'
+            a.style.background = 'green'
+        }
+    </script>
+    
+</body>
+</html>

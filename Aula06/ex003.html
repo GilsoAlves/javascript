@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <style>
+        body {
+            background-color:rgb(255, 255, 255);
+            color:maroon;
+            font: normal 12pt Arial;
+        }
+        h1 {
+            font-size: 1.3em;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá , Mundo!</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima magni neque voluptatem laudantium officiis sapiente cumque dolor. Aliquam consequatur numquam, rem facilis necessitatibus odit quaerat pariatur tempora sit esse ullam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore earum delectus, laboriosam officiis ipsa facilis. Dolorum delectus aliquam est commodi optio perferendis quae culpa tenetur dolores, vitae eum exercitationem voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore animi delectus maiores adipisci itaque alias, perspiciatis a sint, quibusdam, dicta quod totam. Repellendus laborum, sed ea possimus voluptatem maiores nisi.</p>
+    
+    <script>
+      
+
+      // var n1 =Number.parseInt(window.prompt('Digite um numero'))
+      // var n2 =Number.parseInt(window.prompt('Digite outro numero'))
+
+       var n1 =Number(window.prompt('Digite um numero'))
+       var n2 =Number(window.prompt('Digite outro numero'))
+       var s = n1 + n2
+      // window.alert(`A soma entre é ` + String(s)) (usando concatenação)
+      window.alert(`A soma entre ${n1} e ${n2} é ${s}.`) //usando template string
+    </script>
+</body>
+</html>

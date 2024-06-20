@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+        body {
+            background-color: aqua;
+            text-align: center;
+            font-size: 2em;
+            font-weight: bold;
+        }
+        h1 {
+            color: green;
+        }
+        input {
+            color: maroon;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+    Digite seu Pais de Origem: <input type="text" name="pais" id="pais" placeholder="Seu País">
+    <input type="button" value="entrar" onclick="confimar()">
+    <div id="res">
+
+    </div>
+
+    <script>
+        
+        function confimar(){
+
+            var n = window.document.getElementById('pais')
+            var res = window.document.getElementById('res')
+            var m =(n.value)
+
+            res.innerHTML = ` <p>vc mora no ${m}</p>`
+            if(m  == "Brasil"){
+                res.innerHTML = `Morando no ${m} vc é  brasileiro!`
+            }else {
+                res.innerHTML = `Morando no(a) ${m} vc é Estrangeiro!`
+            }
+                
+ 
+        }
+      </script>
+    
+</body>
+</html>
